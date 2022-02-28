@@ -1,30 +1,44 @@
 import React from "react";
 
-import { FaArrowRight, FaCheck } from "react-icons/fa";
+import { ReactComponent as CheckMark } from "../assets/check.svg";
+import { ReactComponent as Arrow } from "../assets/arrow.svg";
+import { ReactComponent as Refresh } from "../assets/refresh.svg";
 
-function Icon({ icon }) {
-  console.log(icon);
+function Icon({ icon, color, disabled }) {
   switch (icon) {
     case "check":
-      <>
-        <FaCheck />
-      </>;
-      break;
+      return (
+        <>
+          <CheckMark
+            fill={
+              color === "secondary" && !!disabled === false ? "black" : "white"
+            }
+          />
+        </>
+      );
+
     case "refresh":
-      <>
-        <i className="ion-refresh" />
-      </>;
-      break;
+      return (
+        <>
+          <Refresh
+            fill={
+              color === "secondary" && !!disabled === false ? "black" : "white"
+            }
+          />
+        </>
+      );
+
     default:
-      <>
-        <FaArrowRight />
-      </>;
+      return (
+        <>
+          <Arrow
+            fill={
+              color === "secondary" && !!disabled === false ? "black" : "white"
+            }
+          />
+        </>
+      );
   }
-  return (
-    <>
-      <FaArrowRight />
-    </>
-  );
 }
 
 export default Icon;

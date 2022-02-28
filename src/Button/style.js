@@ -37,7 +37,7 @@ export const ButtonWrapper = styled.div`
 
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: ${(props) => (props.icon ? "space-between" : "center")};
 
   transition: background 0.5s ease-out;
 
@@ -45,10 +45,6 @@ export const ButtonWrapper = styled.div`
 `;
 
 export const Text = styled.span`
-  display: flex;
-  align-items: center;
-  justify-content: ${(props) => (props.icon ? "space-between" : "center")};
-
   width: 279px;
   height: 17px;
 
@@ -74,5 +70,4 @@ export const ButtonDisabled = styled(ButtonWrapper)`
       (props.color === "primary" && "#B7D0B6") ||
       (props.color === "secondary" && "#FFE58D")};
   }
-  cursor: default;
 `;

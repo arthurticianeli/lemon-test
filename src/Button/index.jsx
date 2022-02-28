@@ -7,11 +7,13 @@ function Button({ children, color, disabled, icon, onClick }) {
     <>
       {disabled ? (
         <ButtonDisabled color={color} icon={!!icon} onClick={onClick}>
-          <span>{children}</span> {icon && <Icon icon={icon}>{icon}</Icon>}
+          <span>{children}</span>
+          {icon && <Icon icon={icon} color={color} disabled={disabled} />}
         </ButtonDisabled>
       ) : (
         <ButtonWrapper color={color} icon={!!icon} onClick={onClick}>
-          <span>{children}</span> {icon && <Icon icon={icon}>{icon}</Icon>}
+          <span>{children}</span>
+          {icon && <Icon icon={icon} color={color} disabled={disabled} />}
         </ButtonWrapper>
       )}
     </>

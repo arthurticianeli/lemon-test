@@ -7,7 +7,16 @@ function App() {
       <Button color="primary" icon="arrow-right">
         Text
       </Button>
+      <Button color="primary" icon="check">
+        Text
+      </Button>
+      <Button color="primary" icon="refresh">
+        Text
+      </Button>
       <Button color="primary" disabled>
+        Text
+      </Button>
+      <Button color="primary" disabled icon="refresh">
         Text
       </Button>
 
@@ -23,6 +32,9 @@ function App() {
       </Button>
 
       <Button color="secondary" disabled>
+        Text
+      </Button>
+      <Button color="secondary" disabled icon="refresh">
         Text
       </Button>
     </div>
