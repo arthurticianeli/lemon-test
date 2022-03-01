@@ -8,35 +8,33 @@ function Icon({ icon, color, disabled }) {
   switch (icon) {
     case "check":
       return (
-        <>
-          <CheckMark
-            fill={
-              color === "secondary" && !!disabled === false ? "black" : "white"
-            }
-          />
-        </>
+        <CheckMark
+          data-testid="check-icon"
+          w="20px"
+          fill={
+            !!disabled ? "white" : color === "secondary" ? "black" : "white"
+          }
+        />
       );
 
     case "refresh":
       return (
-        <>
-          <Refresh
-            fill={
-              color === "secondary" && !!disabled === false ? "black" : "white"
-            }
-          />
-        </>
+        <Refresh
+          data-testid="refresh-icon"
+          fill={
+            !!disabled ? "white" : color === "secondary" ? "black" : "white"
+          }
+        />
       );
 
     default:
       return (
-        <>
-          <Arrow
-            fill={
-              color === "secondary" && !!disabled === false ? "black" : "white"
-            }
-          />
-        </>
+        <Arrow
+          data-testid="arrow-icon"
+          fill={
+            !!disabled ? "white" : color === "secondary" ? "black" : "white"
+          }
+        />
       );
   }
 }

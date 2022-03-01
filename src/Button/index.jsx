@@ -1,22 +1,26 @@
-import React from "react";
 import Icon from "./icon";
-import { ButtonDisabled, ButtonWrapper } from "./style";
+import { StyledButton } from "./styled";
+import PropTypes from "prop-types";
+
+Button.propTypes = {
+  children: PropTypes.node,
+  color: PropTypes.string,
+  disabled: PropTypes.bool,
+  icon: PropTypes.string,
+  onClick: PropTypes.func,
+};
 
 function Button({ children, color, disabled, icon, onClick }) {
   return (
-    <>
-      {disabled ? (
-        <ButtonDisabled color={color} icon={!!icon} onClick={onClick}>
-          <span>{children}</span>
-          {icon && <Icon icon={icon} color={color} disabled={disabled} />}
-        </ButtonDisabled>
-      ) : (
-        <ButtonWrapper color={color} icon={!!icon} onClick={onClick}>
-          <span>{children}</span>
-          {icon && <Icon icon={icon} color={color} disabled={disabled} />}
-        </ButtonWrapper>
-      )}
-    </>
+    <StyledButton
+      color={color}
+      icon={!!icon}
+      onClick={onClick}
+      disabled={disabled}
+    >
+      {children}
+      {!!icon && <Icon icon={icon} color={color} disabled={disabled} />}
+    </StyledButton>
   );
 }
 
