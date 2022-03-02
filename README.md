@@ -2,7 +2,7 @@
 
 # :mag_right: Vercel's deploy (demonstration page)
 
-`https://lemon-test.vercel.app/`
+<a href="https://lemon-test.vercel.app/" target="_blank">`https://lemon-test.vercel.app/`</a>
 
 # :rocket: How to run the project?
 
