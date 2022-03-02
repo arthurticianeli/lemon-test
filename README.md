@@ -6,7 +6,7 @@
 
 # :rocket: How to run the project?
 
-1. Clone thi repo: git clone `git@github.com:arthurticianeli/lemon-test.git`;
+1. Clone this repo: git clone `git@github.com:arthurticianeli/lemon-test.git`;
 
 2. Navigate to project's directory: `cd lemon-test`;
 
@@ -41,7 +41,3 @@
 │   ├── app.js
 │   ├── index.js
 │   └── setupTests.js
-
-
-
-
