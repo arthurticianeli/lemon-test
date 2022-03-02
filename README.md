@@ -1,10 +1,10 @@
-## Lemon Test - Button Component
+# Lemon Test - Button Component
 
-# :mag_right: Vercel's deploy (demonstration page)
+## :mag_right: Vercel's deploy (demonstration page)
 
 <a target="_blank" href="https://lemon-test.vercel.app/">`https://lemon-test.vercel.app/`</a>
 
-# :rocket: How to run the project?
+### :rocket: How to run the project?
 
 1. Clone this repo: git clone `git@github.com:arthurticianeli/lemon-test.git`;
 
@@ -14,9 +14,9 @@
 
 4. Run the application: `yarn start`.
 
-# :computer: Implementation
+## :computer: Implementation
 
-## Technologies used
+### Technologies used
 
 1.  <a target="_blank" href="https://github.com/styled-components/styled-components">`Styled Components`</a> to style the component with props;
 
@@ -24,7 +24,7 @@
 
 3.  <a target="_blank" href="https://github.com/facebook/prop-types">`Prop-types`</a> to check React props.
 
-## File structure:
+### File structure:
 ```
 ├── LEMON-TEST
 │   ├── src
