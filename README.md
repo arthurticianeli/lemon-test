@@ -18,11 +18,11 @@
 
 ## Technologies used
 
-1. Styled Components <a target="_blank" href="https://github.com/styled-components/styled-components">[https://github.com/styled-components/styled-components]</a> to style the component with props;
+1. Styled Components <a target="_blank" href="https://github.com/styled-components/styled-components">`https://github.com/styled-components/styled-components`</a> to style the component with props;
 
-2. Jest-dom e Jest-styled-components <a target="_blank" href="https://github.com/styled-components/jest-styled-components">[https://github.com/styled-components/jest-styled-components]</a> to test Styled Components with Jest;
+2. Jest-dom e Jest-styled-components <a target="_blank" href="https://github.com/styled-components/jest-styled-components">`https://github.com/styled-components/jest-styled-components`</a> to test Styled Components with Jest;
 
-3. Prop-types <a target="_blank" href="https://github.com/facebook/prop-types">[https://github.com/facebook/prop-types]</a> to check React props.
+3. Prop-types <a target="_blank" href="https://github.com/facebook/prop-types">`https://github.com/facebook/prop-types`</a> to check React props.
 
 ## File structure:
 ```
