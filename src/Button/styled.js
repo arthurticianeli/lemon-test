@@ -26,17 +26,13 @@ export const StyledButton = styled.button`
   overflow: hidden;
   text-overflow: ellipsis;
 
-  box-sizing: border-box;
-
-  text-align: ${(props) => (props.icon ? "left" : "center")};
+  opacity: ${(props) => (props.disabled ? 0.5 : 1)};
 
   background: ${(props) =>
     props.color === "secondary" ? "#F7C346" : "#026C00"};
 
   color: ${(props) =>
     props.disabled ? "white" : props.color === "secondary" ? "black" : "white"};
-
-  opacity: ${(props) => (props.disabled ? 0.5 : 1)};
 
   &:hover {
     background: ${(props) =>

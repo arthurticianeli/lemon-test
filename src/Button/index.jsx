@@ -19,7 +19,9 @@ function Button({ children, color, disabled, icon, onClick }) {
       disabled={disabled}
     >
       {children}
-      {!!icon && <Icon icon={icon} color={color} disabled={disabled} />}
+      {!!icon && !!children && (
+        <Icon icon={icon} color={color} disabled={disabled} />
+      )}
     </StyledButton>
   );
 }
