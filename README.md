@@ -24,7 +24,7 @@
 
 3.  <a target="_blank" href="https://github.com/facebook/prop-types">`Prop-types`</a> to check React props.
 
-## :bricks: File structure:
+## File structure:
 ```
 ├── LEMON-TEST
 │   ├── src
