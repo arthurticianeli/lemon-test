@@ -10,9 +10,11 @@
 
 2. Navigate to project's directory: `cd lemon-test`;
 
-3. Install dependencies: `yarn install`; and
+3. Install dependencies: `yarn install`;
 
-4. Run the application: `yarn start`.
+4. Run the application: `yarn start`;
+
+6. Run the tests: `yarn test`.
 
 ## :computer: Implementation
 
